@@ -4,9 +4,109 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <title>Dusan Vlajkovac Portfolio</title>
+  <style>
+    .social-links {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .social-links li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .social-links li:last-child {
+      margin-right: 0;
+    }
+
+    .social-links a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #333;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      background-color: #555;
+    }
+
+    .social-links .linkedin {
+      background-color: #0077B5;
+    }
+
+    .social-links .instagram {
+      background-color: #E4405F;
+    }
+
+    .social-links .github {
+      background-color: #333;
+    }
+    header{
+      background-color: white;
+      border-style:solid;
+      border-color: red;
+    }
+    #logo-img{
+      align-content: left;
+      margin-right: 10px;
+      border-style:solid;
+      border-color: black;
+      border-radius: 25px;
+    }
+    #logo-div{
+      width: 50%;
+    }
+    #nav-div{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    div{
+      border-style:solid;
+      border-color: black;
+    }
+    #Hero-section{
+      padding-top: 6%;
+    }
+  </style>
 </head>
 <body>
-  <h1>HELLO DULE</h1>
+  {% include 'nav.html' %}
+  {% include 'hero.html' %}
+  
+  <section class="container" id="About me">
+    <div>
+      <h1>About me</h1>
+    <p>Mechanical engineer with almost 5 years in the quality control, quality assurance and quality management. Interested in 3D CAD modeling (Proficient with CATIA, SolidWorks and Autodesk Inventor), interested in data analysis and writing scripts to automate task (Proficient in Python and SQL). Able to explain and present analysis and assumptions in a rational manner, able to work in a dynamic and challenging environments and to take ownership of assigned projects and see them thru to completion. I have a strong work ethic, ability to handle multiple projects at once and a yearning to never stop learning. Asking the right questions has also been a strong suit of mine so that the final product perfectly reflects what the client is seeking to receive.</p>
+    </div>
+    
+  </section>
+  <section class="container" id="Portfolio">
+    
+  </section>
+  <section class="container" id="Certificates">
+    
+  </section>
+  <section class="container" id="Testimonials">
+    
+  </section>
+  <section class="container" id="Contact">
+    
+  </section>
+  <footer>
+    
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 </body>
 </html>
