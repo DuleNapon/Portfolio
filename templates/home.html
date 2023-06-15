@@ -9,6 +9,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <title>Dusan Vlajkovac Portfolio</title>
   <style>
+    /* Styeing of the navbar.html */
+    #logo-img{
+      align-content: left;
+      margin-right: 10px;
+      border-style:solid;
+      border-color: black;
+      border-radius: 25px;
+    }
+    #logo-div{
+      width: 50%;
+    }
+    #nav-div{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    /* Styleing of the hero.html */
+    #Hero-section{
+      padding-top: 6%;
+    }
+    
+    /* Styleing of the links.html in hero.html */
     .social-links {
       list-style-type: none;
       padding: 0;
@@ -53,45 +77,46 @@
     }
     header{
       background-color: white;
-      border-style:solid;
-      border-color: red;
     }
-    #logo-img{
-      align-content: left;
-      margin-right: 10px;
-      border-style:solid;
-      border-color: black;
-      border-radius: 25px;
+    /* Styleing outline-width|thin|medium|thick the about-me.html */
+    #grid-div {
+      display: grid;
+      grid-template-columns: 0.5fr 1fr;
+      grid-template-rows: 1fr auto;
+      grid-gap: 10px;
+      justify-items: center;
     }
-    #logo-div{
-      width: 50%;
+    #about-div {
+      width: 100%;
     }
-    #nav-div{
-      width: 50%;
+    #line-div {
+      grid-column: 1 / span 2;
+    }
+    #img-div {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
+    #profile-img{
+      border-radius: 20px;
+    }
+    #line-svg {
+      
+    }
+    
+    /* General styleing */
     div{
       border-style:solid;
       border-color: black;
     }
-    #Hero-section{
-      padding-top: 6%;
-    }
+    
   </style>
 </head>
 <body>
-  {% include 'nav.html' %}
+  {% include 'navbar.html' %}
   {% include 'hero.html' %}
+  {% include 'about-me.html' %}
   
-  <section class="container" id="About me">
-    <div>
-      <h1>About me</h1>
-    <p>Mechanical engineer with almost 5 years in the quality control, quality assurance and quality management. Interested in 3D CAD modeling (Proficient with CATIA, SolidWorks and Autodesk Inventor), interested in data analysis and writing scripts to automate task (Proficient in Python and SQL). Able to explain and present analysis and assumptions in a rational manner, able to work in a dynamic and challenging environments and to take ownership of assigned projects and see them thru to completion. I have a strong work ethic, ability to handle multiple projects at once and a yearning to never stop learning. Asking the right questions has also been a strong suit of mine so that the final product perfectly reflects what the client is seeking to receive.</p>
-    </div>
-    
-  </section>
   <section class="container" id="Portfolio">
     
   </section>
