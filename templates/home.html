@@ -17,19 +17,20 @@
       border-color: black;
       border-radius: 25px;
     }
-    #logo-div{
-      width: 50%;
     }
-    #nav-div{
+    #navbarNavAltMarkup{
       width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
+    .navbar-toggler-icon {
+      background-image: var(--bs-navbar-toggler-icon-bg);
+    }
     
     /* Styleing of the hero.html */
     #Hero-section{
-      padding-top: 6%;
+      
     }
     
     /* Styleing of the links.html in hero.html */
@@ -78,7 +79,7 @@
     header{
       background-color: white;
     }
-    /* Styleing outline-width|thin|medium|thick the about-me.html */
+    /* Styleing the about-me.html */
     #grid-div {
       display: grid;
       grid-template-columns: 0.5fr 1fr;
@@ -89,7 +90,7 @@
     #about-div {
       width: 100%;
     }
-    #line-div {
+    .roadmap {
       grid-column: 1 / span 2;
     }
     #img-div {
@@ -100,9 +101,14 @@
     #profile-img{
       border-radius: 20px;
     }
-    #line-svg {
-      
+    #text {
+      text-align: justify;
     }
+    /* Styleing testimonials section*/
+    #myCarousel {
+      background-color: #f8f9fa;
+    }
+    
     
     /* General styleing */
     div{
@@ -116,22 +122,15 @@
   {% include 'navbar.html' %}
   {% include 'hero.html' %}
   {% include 'about-me.html' %}
+  {% include 'portfolio.html' %}
+  {% include 'certificates.html' %}
+  {% include 'testimonials.html' %}
+  {% include 'contact.html' %}
+  {% include 'footer.html' %}
   
-  <section class="container" id="Portfolio">
-    
-  </section>
-  <section class="container" id="Certificates">
-    
-  </section>
-  <section class="container" id="Testimonials">
-    
-  </section>
-  <section class="container" id="Contact">
-    
-  </section>
-  <footer>
-    
-  </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
