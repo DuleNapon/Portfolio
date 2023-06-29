@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <title>Dusan Vlajkovac Portfolio</title>
   <style>
-    /* Styeing of the navbar.html */
+    /* Styeing of the navbar */
     #logo-img{
       align-content: left;
-      margin-right: 10px;
+      margin-left: 10px;
       border-style:solid;
       border-color: black;
       border-radius: 25px;
@@ -28,12 +28,13 @@
       background-image: var(--bs-navbar-toggler-icon-bg);
     }
     
-    /* Styleing of the hero.html */
-    #Hero-section{
+    /* Styleing of the hero section */
+    
+    
+    /* Styleing of the social links in hero section */
+    #social {
       
     }
-    
-    /* Styleing of the links.html in hero.html */
     .social-links {
       list-style-type: none;
       padding: 0;
@@ -41,6 +42,7 @@
 
     .social-links li {
       display: inline-block;
+      margin-top: 20px;
       margin-right: 10px;
     }
 
@@ -59,6 +61,7 @@
       text-align: center;
       line-height: 30px;
       text-decoration: none;
+      
     }
 
     .social-links a:hover {
@@ -79,7 +82,7 @@
     header{
       background-color: white;
     }
-    /* Styleing the about-me.html */
+    /* Styleing the about-me section */
     #grid-div {
       display: grid;
       grid-template-columns: 0.5fr 1fr;
@@ -105,15 +108,80 @@
       text-align: justify;
     }
     /* Styleing testimonials section*/
-    #myCarousel {
-      background-color: #f8f9fa;
+    .carousel-control-prev-icon{
+      background-image: url(static/chevron-left.svg);
     }
-    
+    .carousel-control-next-icon {
+      background-image: url(static/chevron-right.svg);
+    } 
+    .carousel-control-next {
+      justify-content: right;
+    }
+    .carousel-control-prev {
+      justify-content: left;
+    }
+    .carousel-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 20px;
+    }
+    .carousel-img {
+      border-radius: 100px;
+    }
+    .text-format {
+      text-align: center;
+    }
+    .carousel-inner {
+      border-radius: 10px;
+    }
+    .carousel-indicators [data-bs-target] {
+      background-color: #007bff;
+    }
+
+    /*Styleing contact section*/
+    .map-div{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .google-map {
+      border-radius: 10px;
+    }
+    .mail-btn {
+      margin-bottom: 20px;
+    }
+    /*Styleing footer section*/
+    #Footer {
+      display: flex;
+      flex-direction: row;
+      
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
     
     /* General styleing */
     div{
-      border-style:solid;
+      border-style: solid;
       border-color: black;
+    }
+    body {
+      text-align: center;
+    }
+    
+    /*Media styles*/
+    @media (max-width: 800px) {
+      #grid-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+      }
+      #img-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
     }
     
   </style>
