@@ -2,12 +2,15 @@
   <h1>Certifications</h1>
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      {% for certificate in certificates %}
-            <div class="carousel-item{% if loop.first %} active{% endif %}">
-                <img src="{{ url_for('static', filename='Certificates/' + certificate['image']) }}"
-                     class="img-fluid" height="" width="" alt="{{ certificate['name'] }}">
-            </div>
-            {% endfor %}
+      <div class="carousel-item active">
+        <img src="static/Certificates/Python.jpg" class="img-fluid" height="" width="" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="static/Certificates/Interacting with OS.jpg" class="img-fluid" height="" width="" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="static/Certificates/Git and GitHub.jpg" class="img-fluid" height="" width="" alt="...">
+      </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
