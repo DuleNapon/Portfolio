@@ -3,9 +3,11 @@
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       {% for certificate in certificates %}
-            <div class="carousel-item{% if loop.first %} active{% endif %}">
-                <img src="{{ url_for('static', filename='Certificates/' + certificate['image']) }}"
-                     class="img-fluid" height="" width="" alt="{{ certificate['name'] }}">
+            <div class="carousel-item{% if loop.first %} active{% endif %} ratio" id="cert-div" style="--bs-aspect-ratio: 83%;">
+              <iframe src="{{ url_for('static', filename='Certificates/' + certificate['image']) }}"class="" id="cert" alt="{{ certificate['name'] }}">
+              
+              </iframe>
+              
             </div>
             {% endfor %}
     </div>
@@ -18,5 +20,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>  
-  
+  <div class="container" id="button-div">
+    <a class="btn btn-primary" href="/cert">See all</a>
+  </div>
 </section>
