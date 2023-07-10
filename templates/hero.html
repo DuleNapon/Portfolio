@@ -1,17 +1,14 @@
 <section class="container my-5" id="Hero-section">
   
   <div class="p-5 text-center bg-body-tertiary rounded-3">
-    <svg class="bi mt-4 mb-3 img-fluid" style="color: var(--bs-indigo);" width="230" height="230">
-      <use xlink:href="#bootstrap"/>
-      <image class="img-fluid" id="hero-img" xlink:href="static/wordcloud.jpg" width="230" height="230" x="0" y="0"/>
-    </svg>
+    {% include 'hero-img.html' %}
     <h2 class="text-body-emphasis">Dusan Vlajkovac</h2>
     <p class="col-lg-8 mx-auto fs-5 text-muted">
       Hi! Welcome to Dusan Vlajkovac's homepage. I am a mechanical engineer with knowledge in Quality Management, Software Automation and Data Analysis.
     </p>
     <div class="d-inline-flex gap-2 mb-5">
-      <button class="btn btn-primary rounded-pill px-3" type="button">Visit</button>
-      <button class="btn btn-secondary rounded-pill px-3" type="button">Contact</button>
+      <a class="btn btn-primary rounded-pill px-3" type="button" href="#About-me">Visit</a>
+      <a class="btn btn-secondary rounded-pill px-3" type="button" href="#Contact">Contact</a>
     </div>
     {% include 'links.html' %}
   </div>
