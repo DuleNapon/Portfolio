@@ -4,7 +4,7 @@
     <div class="carousel-inner">
       {% for certificate in certificates %}
             <div class="carousel-item{% if loop.first %} active{% endif %} ratio" id="cert-div" style="--bs-aspect-ratio: 83%;">
-              <iframe src="{{ url_for('static', filename='Certificates/' + certificate['image']) }}"class="" id="cert" alt="{{ certificate['name'] }}">
+              <iframe src="{{ certificate['file_path'] }}" class="" id="cert" alt="{{ certificate['name'] }}">
               
               </iframe>
               

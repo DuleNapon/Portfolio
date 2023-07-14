@@ -90,7 +90,7 @@
             <div class="card shadow-sm">
               <div class="card-body">
                 <div class="embed-responsive  ratio" style="--bs-aspect-ratio: 80%;">
-                  <iframe class="embed-responsive-item"  src="{{ url_for('static', filename='Certificates/' + certificate['image']) }}" height="100%" width="100%"></iframe>
+                  <iframe class="embed-responsive-item"  src="{{ certificate['file_path'] }}" height="100%" width="100%"></iframe>
                 </div>
               </div>
             </div>
