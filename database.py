@@ -3,10 +3,10 @@ import os
 
 # MySQL connection configuration
 config = {
-    "database": "portfolio",
-    "username": os.environ["username"],
-    "host": os.environ["host"],
-    "password": os.environ["password"]
+  "database": os.environ["DB_NAME"],
+  "username": os.environ["DB_USERNAME"],
+  "host": os.environ["DB_HOST"],
+  "password": os.environ["DB_PASSWORD"]
 }
 
 # Directory to save PDF files
@@ -28,22 +28,19 @@ cnx.close()
 # Prepare the certificates list of dictionaries
 certificates = []
 for row in data:
-    cert_name = row[0]
-    cert_file = row[1]
+  cert_name = row[0]
+  cert_file = row[1]
 
-    # Generate a unique file name based on the certificate name
-    file_name = f"{cert_name}.pdf"
-    file_path = os.path.join(pdf_directory, file_name)
+  # Generate a unique file name based on the certificate name
+  file_name = f"{cert_name}.pdf"
+  file_path = os.path.join(pdf_directory, file_name)
 
-    # Save the PDF file to the server's file system
-    with open(file_path, 'wb') as file:
-        file.write(cert_file)
+  # Save the PDF file to the server's file system
+  with open(file_path, 'wb') as file:
+    file.write(cert_file)
 
-    certificate = {
-        "name": cert_name,
-        "file_path": file_path
-    }
+  certificate = {"name": cert_name, "file_path": file_path}
 
-    certificates.append(certificate)
+  certificates.append(certificate)
 
 print(certificates)
