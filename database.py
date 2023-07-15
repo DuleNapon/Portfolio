@@ -4,9 +4,9 @@ import os
 # MySQL connection configuration
 config = {
     "database": "portfolio",
-    "username": "pl8285ki22iheu7fluzo",
-    "host": "aws.connect.psdb.cloud",
-    "password": "pscale_pw_eRWrprQYI8ERCDUgPn3ZLxSiAxedR66zPtWsShhsILv"
+    "username": os.environ["username"],
+    "host": os.environ["host"],
+    "password": os.environ["password"]
 }
 
 # Directory to save PDF files
